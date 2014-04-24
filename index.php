@@ -231,7 +231,7 @@ function statsTable($devs) {
   <th>Totals</th>
   <th>" . $devices . "</th>
   <th></th>
-  <th><a href='http://mineforeman.com/bitcoin-mining-calculator/?hash=" . $MHSav . "' target='_blank'>" . $MHSav . "</a></th>
+  <th>" . $MHSav . "</th>
   <th>" . $Accepted . "</th>
   <th>" . $Rejected . " [" . round(($DeviceRejected / $devices), 2) . "%]</th>
   <th>" . $HardwareErrors . " [" . round(($hwErrorPercent / $devices), 2) . "%]</th>
