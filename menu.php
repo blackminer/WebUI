@@ -1,5 +1,5 @@
 <div class="navbar">
-  <a class="navbar-brand-hf" href="http://blackminer.com"><img width=150 height=50 src=HF-WhiteBG-Logo-resized.jpg></a>
+  <a class="navbar-brand-hf" href="http://blackminer.com"><img width=150 height=50 src=blackminer.jpg></a>
   <div class="container">
     <ul class="nav navbar-nav">
 		<li><a href="/">Status</a></li>
