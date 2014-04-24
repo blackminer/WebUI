@@ -357,7 +357,7 @@ if (empty($username)) {
       <div class="form-group">
         <div class="col-lg-9 col-offset-3">
 		  <p class="redalert">
-<i>WARNING: Entering parameters that exceed specifications may void your HashFast product warranty!</i>
+<i>WARNING: Entering parameters that exceed specifications may void your Black Miner product warranty!</i>
 <br />
 Entering invalid parameters here may break your system! &nbsp;
 Leave this empty for a normal mining setup.
@@ -382,9 +382,9 @@ For any changes to take effect, You will need to press "Save &amp Restart" at wh
   
 <!-- ######################## -->
 
-  <form name="updates" action="/settings.php" method="post" class="form-horizontal">
+  <form name="updates" action="/settings.php" method="post" class="form-horizontal" style="display: none;">
     <fieldset>
-      <legend>HashFast Updates</legend>
+      <legend>Black Miner Updates</legend>
       <div class="form-group">
         <label for="updates" class="control-label col-lg-3">Automatic Updates</label>
         <div class="col-lg-9">
@@ -392,7 +392,7 @@ For any changes to take effect, You will need to press "Save &amp Restart" at wh
             <input type='hidden' value='true' name='disableUpdates'>
             <label>
               <input type="checkbox" <?php echo $settings['disableUpdates']?"":"checked"; ?> value="false" id="disableUpdates" name="disableUpdates"> 
-Enable automatic software and firmware updates from HashFast
+Enable automatic software and firmware updates from Black Miner
             </label>
           </div>
         </div>
@@ -415,7 +415,7 @@ Because of continuous improvements, having updates can improve performance and r
   
 <!-- ######################## -->
 
-  <form name="donation" action="/settings.php" method="post" class="form-horizontal">
+  <form name="donation" action="/settings.php" method="post" class="form-horizontal" style="display: none;">
     <fieldset>
       <legend>Donation</legend>
       <div class="form-group">
