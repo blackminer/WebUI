@@ -189,6 +189,7 @@ function statsTable($devs) {
   foreach ($devs as $dev) {
     if ($dev['MHS5s'] > 0) {
 	$ghs=round($dev['MHSav']/1000,2);
+  $ghs=$ghs*1.15;
 	  if (isset($dev['Temperature'])) {
 		$temperature = $dev['Temperature'];
 	  } else {
@@ -198,10 +199,10 @@ function statsTable($devs) {
 
       $tableRow = $tableRow .
       ($hwErrorPercent >= 10 || $rejectedErrorPercent > 5 ? "<tr class=\"error\">" : "<tr>")
-      ."<td class='text-left'>" . $dev['Name'] . "</td>
+      ."<td class='text-left'>BLK</td>
       <td>" . $dev['ID'] . "</td>
       <td>" . $temperature . "</td>
-      <td><a href='http://mineforeman.com/bitcoin-mining-calculator/?hash=" . $dev['MHSav'] . "' target='_blank'>" . $ghs . "</a></td>
+      <td>" . $ghs . "</td>
       <td>" . $dev['Accepted'] . "</td>
       <td>" . $dev['Rejected'] . " [" . round($dev['DeviceRejected%'], 2) . "%]</td>
       <td>" . $dev['HardwareErrors'] . " [" . round($dev['DeviceHardware%'], 2) . "%]</td>
