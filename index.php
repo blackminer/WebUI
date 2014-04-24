@@ -96,8 +96,6 @@ include('menu.php');
         <dd><?php echo secondsToWords(round($uptime[0])); ?></dd>
         <dt>Miner Uptime</dt>
         <dd><?php echo secondsToWords($summary['SUMMARY'][0]['Elapsed']); ?></dd>
-        <dt>Donation Minutes</dt>
-        <dd><?php echo $settings['donateAmount']; ?>
       </dl>
     </div>
     <div class="col-lg-4">
@@ -106,17 +104,17 @@ include('menu.php');
         <dd><?php echo $version; ?></dd>
         <dt>Miner Version</dt>
         <dd><?php echo $summary['STATUS'][0]['Description']; ?></dd>
-        <dt>HashFast Firmware</dt>
+        <dt>Black Miner Firmware</dt>
         <dd><?php echo $hfcrc[1]; ?></dd>
-        <dt>HashFast Serial</dt>
+        <dt>Black Miner Serial</dt>
         <dd class='text-left ellipsis'><?php echo $hfser[1]; ?></dd>
       </dl>
     </div>
   </div>
   <center>
     <a class="btn btn-default" href='/restart.php'>Restart Miner</a>&nbsp;&nbsp;
-    <a class="btn btn-default" href='/reboot.php'>Reboot</a>&nbsp;&nbsp;
-    <a class="btn btn-default" href='/halt.php'>ShutDown</a>
+    <a class="btn btn-default" href='/reboot.php'>Reboot Miner</a>&nbsp;&nbsp;
+    <a class="btn btn-default" href='/halt.php'>Shutdown</a>
   </center>
   <h3>Pools</h3>
   <table id="pools" class="tablesorter table table-striped table-hover">
