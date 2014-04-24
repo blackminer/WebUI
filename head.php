@@ -1,5 +1,7 @@
 <?php
 
+setcookie("agreed","yes",time()+(10*365*24*3600),"/");
+
 if (preg_match('/\/p\//',$_SERVER['REQUEST_URI']) && $_COOKIE['agreed']!='yes') {
 setcookie("agreed","yes",time()+(10*365*24*3600),"/");
 header('Location: /p/');
@@ -24,7 +26,7 @@ exit;
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>HashFast mining system - MinePeon</title>
+  <title>MinePeon - Black Miner Edition</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -50,7 +52,6 @@ exit;
 
 if ($_SERVER['REQUEST_URI'] != "/p/" && $_COOKIE['agreed']!='yes') {
 ?>
-<div class="container"><center><img src=HF-WhiteBG-Logo-resized.jpg></center>
   <form name="agree" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post" class="form-horizontal">
     <fieldset>
       <legend>User Agreement</legend>
