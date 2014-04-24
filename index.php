@@ -20,9 +20,9 @@ function create_graph($output, $start, $title) {
     "--slope-mode",
     "--start", $start,
     "--title=$title",
-    "--vertical-label=Hash per second",
+    "--vertical-label=Gigahash / Second",
     "--lower=0",
-    "DEF:hashrate=" . $RRDPATH . "hashrate.rrd:hashrate:AVERAGE",
+    "DEF:hashrate=" . $RRDPATH . "hashrate.rrd:hashrate:AVERAGE*1.15",
     "CDEF:realspeed=hashrate,1000,*",
     "LINE2:realspeed#FF0000"
     );
