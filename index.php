@@ -115,4 +115,5 @@ else
 #
 echo print_r($r, true)."\n";
 #
+echo "DEMO";
 ?>
