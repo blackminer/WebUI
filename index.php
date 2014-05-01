@@ -1,7 +1,8 @@
 <?php
-#
-# Sample Socket I/O to CGMiner API
-#
+
+error_reporting(E_ALL);
+ ini_set('display_errors', 1);
+
 function getsock($addr, $port)
 {
  $socket = null;
