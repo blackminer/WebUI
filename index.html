@@ -93,7 +93,7 @@
 <script>
 
 $(document).ready(function(){
-    function refreshValues(){
+    function localValues(){
 		
     	$.get("cgminer.php?group=SUMMARY&value=MHS av",function(data){     
             $('#overall-average').fadeOut("fast").html(data).fadeIn("fast");
@@ -114,11 +114,28 @@ $(document).ready(function(){
             $('#current-uptime').fadeOut("fast").html(data).fadeIn("fast");
     	});
 		
-		window.setTimeout(refreshValues, 5000);
+		window.setTimeout(localValues, 5000);
     
 	};
 	
-   	refreshValues();  
+	function poolValues(){
+		
+    	$.get("ghash.php?value=last5m",function(data){     
+            $('#5minutes-pool-average').fadeOut("fast").html(data).fadeIn("fast");
+    	});
+		$.get("ghash.php?value=last15m",function(data){     
+            $('#15minutes-pool-average').fadeOut("fast").html(data).fadeIn("fast");
+    	});
+		$.get("ghash.php?value=last1h",function(data){     
+            $('#1hour-pool-average').fadeOut("fast").html(data).fadeIn("fast");
+    	});
+		
+		window.setTimeout(localValues, 60000);
+    
+	};
+	
+   	localValues();  
+	poolValues();  
 	
 });
 

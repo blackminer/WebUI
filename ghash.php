@@ -27,8 +27,9 @@ $options = array(
 $context  = stream_context_create($options);
 $result = file_get_contents($url, false, $context);
 
-$value = json_decode($result);
+$show = json_decode($result);
 
-echo $value->{'last5m'};
+$value = $_GET['value'];
+$return = $show->{$value};
 
 ?>
