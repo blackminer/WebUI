@@ -106,7 +106,6 @@ function request($cmd)
  return null;
 }
 #
-echo "-------------";
 $r = request('summary+devs+pools');
 #
 $group=$_GET['group'];
