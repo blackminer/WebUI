@@ -3,7 +3,7 @@
 	include_once("cexapi.class.php");
 	
 	// Create API Object
-	$api = new cexapi("ionutrai", "QOSW4k3DRjUzsa9IBP62Y5GbGcw", "s0yLWoX0SncDTngE5WkzuDZp2o");
+	$api = new cexapi("ionutrai", "Ub2iMQkOPn3WWWf6kWxceFGc", "c3ZAhjFLR16nExRqumayqF40onk");
 	
 	// Test some API Methods
 	echo "Ticker:<pre>", json_encode($api->ticker()), "</pre>";
