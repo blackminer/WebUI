@@ -115,7 +115,7 @@ $result = $r[$group][$value];
 if ($value == "MHS av") {
 	$result = $result / 1000;
 	$result = round($result, 2);
-	$result = $result * 2;
+	$result = $result * 1.9;
 	if ( $result > 801) {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
@@ -126,7 +126,7 @@ if ($value == "MHS av") {
 if ($value == "MHS 5s") {
 	$result = $result / 1000;
 	$result = round($result, 2);
-	$result = $result * 2;
+	$result = $result * 1.9;
 	if ( $result > 801) {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
@@ -136,7 +136,7 @@ if ($value == "MHS 5s") {
 if ($value == "MHS 1m") {
 	$result = $result / 1000;
 	$result = round($result, 2);
-	$result = $result * 2;
+	$result = $result * 1.9;
 	if ( $result > 801) {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
@@ -146,7 +146,7 @@ if ($value == "MHS 1m") {
 if ($value == "MHS 5m") {
 	$result = $result / 1000;
 	$result = round($result, 2);
-	$result = $result * 2;
+	$result = $result * 1.9;
 	if ( $result > 801) {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
@@ -156,7 +156,7 @@ if ($value == "MHS 5m") {
 if ($value == "MHS 15m") {
 	$result = $result / 1000;
 	$result = round($result, 2);
-	$result = $result * 2;
+	$result = $result * 1.9;
 	if ( $result > 801) {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
