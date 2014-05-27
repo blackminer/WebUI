@@ -137,6 +137,9 @@ if ($value == "MHS 15m") {
 	$result = round($result, 2);
 	$result = $result." GH/s";
 }
+if ($value == "Device Elapsed") {
+	$result = gmdate("H:i:s", $result);
+}
 #	
 echo $result;
 ?>
