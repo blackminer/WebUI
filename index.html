@@ -72,7 +72,7 @@
 $(document).ready(function(){
     function refreshValues(){
 		
-    	$.get("value.html",function(data){     
+    	$.get("cgminer.php?group=SUMMARY&value=MHS av",function(data){     
             $('#overall-average').html(data);
     	});
     
