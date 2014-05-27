@@ -1,8 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
- ini_set('display_errors', 1);
-
 function getsock($addr, $port)
 {
  $socket = null;
@@ -112,9 +109,9 @@ function request($cmd)
 if (isset($argv) and count($argv) > 1)
  $r = request($argv[1]);
 else
- $r = request('summary');
+ $r = request('summary+devs+pools');
 #
-echo print_r($r, true)."\n";
-#
-echo "DEMO";
+$group=$_GET['group'];
+$value=$_GET['value'];
+echo $r[$group][$value];
 ?>

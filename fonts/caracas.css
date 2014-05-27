@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'caracaslight';
+    src: url('caracas-light-webfont.eot');
+    src: url('caracas-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('caracas-light-webfont.woff') format('woff'),
+         url('caracas-light-webfont.ttf') format('truetype'),
+         url('caracas-light-webfont.svg#caracaslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caracasmedium';
+    src: url('caracas-medium-webfont.eot');
+    src: url('caracas-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('caracas-medium-webfont.woff') format('woff'),
+         url('caracas-medium-webfont.ttf') format('truetype'),
+         url('caracas-medium-webfont.svg#caracasmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caracasregular';
+    src: url('caracas-webfont.eot');
+    src: url('caracas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('caracas-webfont.woff') format('woff'),
+         url('caracas-webfont.ttf') format('truetype'),
+         url('caracas-webfont.svg#caracasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
