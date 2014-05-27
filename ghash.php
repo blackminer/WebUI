@@ -2,7 +2,7 @@
 	
 //$api = new cexapi("ionutrai", "Ub2iMQkOPn3WWWf6kWxceFGc", "c3ZAhjFLR16nExRqumayqF40onk");
 	
-$url = 'http://server.com/path';
+$url = 'https://cex.io/api/ghash.io/hashrate';
 $nonce = time();
 $data = array('key' => 'Ub2iMQkOPn3WWWf6kWxceFGc', 'signature' => 'c3ZAhjFLR16nExRqumayqF40onk', 'nonce' => '$nonce');
 
