@@ -117,6 +117,11 @@ if ($value == "MHS av") {
 	$result = round($result, 2);
 	$result = $result." GH/s";
 }
+if ($value == "MHS 5s") {
+	$result = $result / 1000;
+	$result = round($result, 2);
+	$result = $result." GH/s";
+}
 if ($value == "MHS 1m") {
 	$result = $result / 1000;
 	$result = round($result, 2);
