@@ -4,7 +4,7 @@
 	
 $url = 'https://cex.io/api/ghash.io/hashrate';
 
-$nonce = time();
+$nonce = round(microtime(true)*100);
 $apiusername = "ionutrai";
 $apikey = "Ub2iMQkOPn3WWWf6kWxceFGc";
 $apisecret = "c3ZAhjFLR16nExRqumayqF40onk";
@@ -27,6 +27,6 @@ $options = array(
 $context  = stream_context_create($options);
 $result = file_get_contents($url, false, $context);
 
-var_dump($result);
+var_dump(json_decode($result));
 
 ?>
