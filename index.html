@@ -73,7 +73,9 @@ $(document).ready(function(){
     function refreshValues(){
 		
     	$.get("cgminer.php?group=SUMMARY&value=MHS av",function(data){     
-            $('#overall-average').fadeOut("slow").html(data).fadeIn("slow");
+            $('#overall-average').fadeOut("slow");
+			 $('#overall-average').html(data);
+			 $('#overall-average').fadeIn("slow");
     	});
 		$.get("cgminer.php?group=SUMMARY&value=MHS 5s",function(data){     
             $('#5seconds-average').html(data);
