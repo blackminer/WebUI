@@ -4,7 +4,7 @@
 	
 $url = 'http://server.com/path';
 $nonce = time();
-$data = array('key' => 'Ub2iMQkOPn3WWWf6kWxceFGc', 'signature' => 'c3ZAhjFLR16nExRqumayqF40onk', 'nonce' => '$time');
+$data = array('key' => 'Ub2iMQkOPn3WWWf6kWxceFGc', 'signature' => 'c3ZAhjFLR16nExRqumayqF40onk', 'nonce' => '$nonce');
 
 $options = array(
     'http' => array(
