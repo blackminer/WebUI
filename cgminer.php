@@ -106,10 +106,8 @@ function request($cmd)
  return null;
 }
 #
-if (isset($argv) and count($argv) > 1)
- $r = request($argv[1]);
-else
- $r = request('summary+devs+pools');
+echo "-------------";
+$r = request('summary+devs+pools');
 #
 $group=$_GET['group'];
 $value=$_GET['value'];
