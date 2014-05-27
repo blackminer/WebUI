@@ -1,10 +1,21 @@
 <?php
-	// Include Cex.io PHP API
-	include_once("cexapi.class.php");
 	
-	// Create API Object
-	$api = new cexapi("ionutrai", "Ub2iMQkOPn3WWWf6kWxceFGc", "c3ZAhjFLR16nExRqumayqF40onk");
+//$api = new cexapi("ionutrai", "Ub2iMQkOPn3WWWf6kWxceFGc", "c3ZAhjFLR16nExRqumayqF40onk");
 	
-	// Test some API Methods
-	echo "Hashrate:<pre>", json_encode($api->hashrate()), "</pre>";
+$url = 'http://server.com/path';
+$nonce = time();
+$data = array('key' => 'Ub2iMQkOPn3WWWf6kWxceFGc', 'signature' => 'c3ZAhjFLR16nExRqumayqF40onk', 'nonce' => '$time');
+
+$options = array(
+    'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data),
+    ),
+);
+$context  = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+
+var_dump($result);
+
 ?>

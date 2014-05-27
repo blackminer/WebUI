@@ -18,3 +18,4 @@ img { border: none !important; }
 .unit .model { float: left; width: 100%; font-size: 48px; font-family: "caracaslight"; color: #FFFFFF; margin-bottom: 20px; margin-top: 15px; }
 .unit .serial { float: left; width: 100%; font-size: 14px; font-family: "caracasregular"; color: #FFFFFF; text-transform: uppercase; line-height: 16px; padding-left: 22px; background: url(../img/icon_sn.png) top left no-repeat; margin-bottom: 10px;}
 .unit .manufacturing { float: left; width: 100%; font-size: 14px; font-family: "caracasregular"; color: #FFFFFF; text-transform: uppercase; line-height: 16px; padding-left: 22px; background: url(../img/icon_date.png) top left no-repeat; margin-bottom: 10px; }
+
