@@ -76,19 +76,19 @@ $(document).ready(function(){
             $('#overall-average').fadeOut("fast").html(data).fadeIn("fast");
     	});
 		$.get("cgminer.php?group=SUMMARY&value=MHS 5s",function(data){     
-            $('#5seconds-average').html(data);
+            $('#5seconds-average').fadeOut("fast").html(data).fadeIn("fast");
     	});
 		$.get("cgminer.php?group=SUMMARY&value=MHS 1m",function(data){     
-            $('#1minute-average').html(data);
+            $('#1minute-average').fadeOut("fast").html(data).fadeIn("fast");
     	});
 		$.get("cgminer.php?group=SUMMARY&value=MHS 5m",function(data){     
-            $('#5minutes-average').html(data);
+            $('#5minutes-average').fadeOut("fast").html(data).fadeIn("fast");
     	});
 		$.get("cgminer.php?group=SUMMARY&value=MHS 15m",function(data){     
-            $('#15minutes-average').html(data);
+            $('#15minutes-average').fadeOut("fast").html(data).fadeIn("fast");
     	});
 		$.get("cgminer.php?group=ASC0&value=Device Elapsed",function(data){     
-            $('#current-uptime').html(data);
+            $('#current-uptime').fadeOut("fast").html(data).fadeIn("fast");
     	});
 		
 		window.setTimeout(refreshValues, 5000);
