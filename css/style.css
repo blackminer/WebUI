@@ -61,5 +61,30 @@ td {
 #poolstats th {
 	width: 320px;
 }
+
+#poolstats td {
+	font-size: 22px;
+}
+
+h2 {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "caracasregular";
+	font-weight: normal;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+h2 small {
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #BCBCBC;
+}
 	
 	
