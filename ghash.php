@@ -32,5 +32,5 @@ $show = json_decode($result);
 $returnValue = $show->{'last5m'};
 $returnValue = $returnValue / 1000;
 $returnValue = round($returnValue, 2);
-echo $returnValue;
+echo $returnValue. " GH/s";
 ?>
