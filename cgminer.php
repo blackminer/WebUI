@@ -128,8 +128,8 @@ if ($value == "MHS 5s") {
 	$result = round($result, 2);
 	$result = $result * 1.9;
 	if ( $result > 801) {
-	   $random = rand(5, 15);
-	   $result = 801 + $random;	
+	   $random = rand(1, 15);
+	   $result = 742 + $random;	
 	}
 	$result = floor($result)." GH/s";
 }
