@@ -115,6 +115,7 @@ $result = $r[$group][$value];
 if ($value == "MHS av") {
 	$result = $result / 1000;
 	$result = round($result, 2);
+	$result = $result." GH/s";
 }
 #	
 echo $result;
