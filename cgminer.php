@@ -111,5 +111,11 @@ $r = request('summary+devs+pools');
 $group=$_GET['group'];
 $value=$_GET['value'];
 $result = $r[$group][$value];
+#
+if ($value == "MHS av") {
+	$result = $result / 1000;
+	$result = round($result, 2);
+}
+#	
 echo $result;
 ?>
