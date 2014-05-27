@@ -3,8 +3,19 @@
 //$api = new cexapi("ionutrai", "Ub2iMQkOPn3WWWf6kWxceFGc", "c3ZAhjFLR16nExRqumayqF40onk");
 	
 $url = 'https://cex.io/api/ghash.io/hashrate';
+
 $nonce = time();
-$data = array('key' => 'Ub2iMQkOPn3WWWf6kWxceFGc', 'signature' => 'c3ZAhjFLR16nExRqumayqF40onk', 'nonce' => $nonce);
+$apiusername = "ionutrai";
+$apikey = "Ub2iMQkOPn3WWWf6kWxceFGc";
+$apisecret = "c3ZAhjFLR16nExRqumayqF40onk";
+
+$string = $nonce . $apiusername . $apikey; //Create string
+$hash = hash_hmac('sha256', $string, $apisecret); //Create hash
+$hash = strtoupper($hash);
+$apisignature = $hash;
+
+
+$data = array('key' => $apikey, 'signature' => $apisignature, 'nonce' => $nonce);
 
 $options = array(
     'http' => array(
