@@ -121,7 +121,7 @@ if ($value == "MHS av") {
 	   $result = 801 + $random;	
 	}
 	
-	$result = $result." GH/s";
+	$result = floor($result)." GH/s";
 }
 if ($value == "MHS 5s") {
 	$result = $result / 1000;
@@ -131,7 +131,7 @@ if ($value == "MHS 5s") {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
 	}
-	$result = $result." GH/s";
+	$result = floor($result)." GH/s";
 }
 if ($value == "MHS 1m") {
 	$result = $result / 1000;
@@ -141,7 +141,7 @@ if ($value == "MHS 1m") {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
 	}
-	$result = $result." GH/s";
+	$result = floor($result)." GH/s";
 }
 if ($value == "MHS 5m") {
 	$result = $result / 1000;
@@ -151,7 +151,7 @@ if ($value == "MHS 5m") {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
 	}
-	$result = $result." GH/s";
+	$result = floor($result)." GH/s";
 }
 if ($value == "MHS 15m") {
 	$result = $result / 1000;
@@ -161,7 +161,7 @@ if ($value == "MHS 15m") {
 	   $random = rand(5, 15);
 	   $result = 801 + $random;	
 	}
-	$result = $result." GH/s";
+	$result = floor($result)." GH/s";
 }
 if ($value == "Device Elapsed") {
 	$result = gmdate("H:i:s", $result);
