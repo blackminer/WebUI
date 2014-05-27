@@ -29,6 +29,8 @@ $result = file_get_contents($url, false, $context);
 
 $show = json_decode($result);
 
-echo $show->{'last5m'};
-
+$returnValue = $show->{'last5m'};
+$returnValue = $returnValue / 1000;
+$returnValue = round($returnValue, 2);
+echo $returnValue;
 ?>
