@@ -90,10 +90,12 @@ $(document).ready(function(){
 		$.get("cgminer.php?group=SUMMARY&value=MHS av",function(data){     
             $('#current-uptime').html(data);
     	});
+		
+		window.setTimeout(refreshValues, 5000);
     
 	};
 	
-	window.setTimeout(refreshValues, 5000);
+   	refreshValues();  
 	
 });
 
