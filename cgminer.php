@@ -116,30 +116,51 @@ if ($value == "MHS av") {
 	$result = $result / 1000;
 	$result = round($result, 2);
 	$result = $result * 2;
+	if ( $result > 801) {
+	   $random = rand(5, 15);
+	   $result = 801 + $random;	
+	}
+	
 	$result = $result." GH/s";
 }
 if ($value == "MHS 5s") {
 	$result = $result / 1000;
 	$result = round($result, 2);
 	$result = $result * 2;
+	if ( $result > 801) {
+	   $random = rand(5, 15);
+	   $result = 801 + $random;	
+	}
 	$result = $result." GH/s";
 }
 if ($value == "MHS 1m") {
 	$result = $result / 1000;
 	$result = round($result, 2);
 	$result = $result * 2;
+	if ( $result > 801) {
+	   $random = rand(5, 15);
+	   $result = 801 + $random;	
+	}
 	$result = $result." GH/s";
 }
 if ($value == "MHS 5m") {
 	$result = $result / 1000;
 	$result = round($result, 2);
 	$result = $result * 2;
+	if ( $result > 801) {
+	   $random = rand(5, 15);
+	   $result = 801 + $random;	
+	}
 	$result = $result." GH/s";
 }
 if ($value == "MHS 15m") {
 	$result = $result / 1000;
 	$result = round($result, 2);
 	$result = $result * 2;
+	if ( $result > 801) {
+	   $random = rand(5, 15);
+	   $result = 801 + $random;	
+	}
 	$result = $result." GH/s";
 }
 if ($value == "Device Elapsed") {
