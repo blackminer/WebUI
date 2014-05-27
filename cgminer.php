@@ -110,5 +110,6 @@ $r = request('summary+devs+pools');
 #
 $group=$_GET['group'];
 $value=$_GET['value'];
-echo $r[$group][$value];
+$result = $r[$group][$value];
+echo $result;
 ?>
