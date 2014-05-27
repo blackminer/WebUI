@@ -120,15 +120,23 @@ $(document).ready(function(){
 	
 	function poolValues(){
 		
-    	$.get("ghash.php?value=last5m",function(data){     
-            $('#5minutes-pool-average').fadeOut("fast").html(data).fadeIn("fast");
-    	});
-		$.get("ghash.php?value=last15m",function(data){     
-            $('#15minutes-pool-average').fadeOut("fast").html(data).fadeIn("fast");
-    	});
-		$.get("ghash.php?value=last1h",function(data){     
-            $('#1hour-pool-average').fadeOut("fast").html(data).fadeIn("fast");
-    	});
+		setTimeout(function (){
+			$.get("ghash.php?value=last5m",function(data){     
+				$('#5minutes-pool-average').fadeOut("fast").html(data).fadeIn("fast");
+			});
+		}, 1000);
+		
+		setTimeout(function (){
+			$.get("ghash.php?value=last15m",function(data){     
+				$('#15minutes-pool-average').fadeOut("fast").html(data).fadeIn("fast");
+			});
+		}, 2000);
+		
+		setTimeout(function (){
+			$.get("ghash.php?value=last1h",function(data){     
+				$('#1hour-pool-average').fadeOut("fast").html(data).fadeIn("fast");
+			});
+		}, 3000);
 		
 		window.setTimeout(poolValues, 60000);
     
