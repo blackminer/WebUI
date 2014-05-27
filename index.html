@@ -72,7 +72,7 @@
 $(document).ready(function(){
     function refreshValues(){
 		
-    	$.getJSON("value.html",function(data){     
+    	$.get("value.html",function(data){     
             $('#overall-average').html(data);
     	});
     
