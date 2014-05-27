@@ -28,8 +28,20 @@ $context  = stream_context_create($options);
 $result = file_get_contents($url, false, $context);
 
 $show = json_decode($result);
+$value = $_GET['value'];
 
-$returnValue = $show->{'last5m'};
+if ($value == "last5m") {
+	$returnValue = $show->{'last5m'};
+}
+
+if ($value == "last15m") {
+	$returnValue = $show->{'last15m'};
+}
+
+if ($value == "last1h") {
+	$returnValue = $show->{'last1h'};
+}
+
 $returnValue = $returnValue / 1000;
 $returnValue = round($returnValue, 2);
 echo $returnValue. " GH/s";
