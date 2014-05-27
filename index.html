@@ -18,10 +18,7 @@
         
         <div class="navigation">
             <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Pool</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Updates</a></li>
+                <li><a>Central European Bitcoin Expo 2014</a></li>
             </ul>
         </div> <!-- navigation -->
     
@@ -30,11 +27,11 @@
     <div class="unit">
     
     	<div class="model">
-    		Black Miner Prime II 1.2 TH/s
+    		Black Miner Evo Board (700+ GH/s)
     	</div> <!-- model -->
         
     	<div class="serial">
-        	Serial Number: BLKMP0100
+        	Serial Number: BLKEVO001C
        </div> <!-- serial -->
        
     	<div class="manufacturing">
@@ -67,6 +64,25 @@
     </div> <!-- page -->
 
 </div> <!-- container -->
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    function refreshValues(){
+		
+    	$.getJSON("value.html",function(data){     
+            $('#overall-average').html(data);
+    	});
+    
+	};
+	
+	window.setTimeout(refreshValues, 5000);
+	
+});
+
+</script>
 
 </body>
 </html>
