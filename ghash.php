@@ -29,7 +29,6 @@ $result = file_get_contents($url, false, $context);
 
 $show = json_decode($result);
 
-$value = $_GET['value'];
-$return = $show->$value;
+echo $show->{'last5m'};
 
 ?>
