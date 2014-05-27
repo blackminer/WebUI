@@ -4,7 +4,7 @@
 	
 $url = 'https://cex.io/api/ghash.io/hashrate';
 $nonce = time();
-$data = array('key' => 'Ub2iMQkOPn3WWWf6kWxceFGc', 'signature' => 'c3ZAhjFLR16nExRqumayqF40onk', 'nonce' => '$nonce');
+$data = array('key' => 'Ub2iMQkOPn3WWWf6kWxceFGc', 'signature' => 'c3ZAhjFLR16nExRqumayqF40onk', 'nonce' => $nonce);
 
 $options = array(
     'http' => array(
