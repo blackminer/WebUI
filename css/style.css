@@ -86,5 +86,11 @@ h2 small {
 	text-transform: uppercase;
 	color: #BCBCBC;
 }
+
+.url {
+	float: left;
+	width: 100%;
+	margin-top: 50px;
+}
 	
 	
