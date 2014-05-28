@@ -118,7 +118,7 @@ if ($value == "MHS av") {
 	$result = $result * 1.9;
 	if ( $result > 741) {
 	   $random = rand(5, 15);
-	   $result = 801 + $random;	
+	   $result = 735 + $random;	
 	}
 	
 	$result = floor($result)." GH/s";
