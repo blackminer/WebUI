@@ -115,22 +115,11 @@ $result = $r[$group][$value];
 if ($value == "MHS av") {
 	$result = $result / 1000;
 	$result = round($result, 2);
-	$result = $result * 1.9;
-	if ( $result > 741) {
-	   $random = rand(5, 15);
-	   $result = 735 + $random;	
-	}
-	
 	$result = floor($result)." GH/s";
 }
 if ($value == "MHS 5s") {
 	$result = $result / 1000;
 	$result = round($result, 2);
-	$result = $result * 1.9;
-	if ( $result > 741) {
-	   $random = rand(1, 15);
-	   $result = 742 + $random;	
-	}
 	$result = floor($result)." GH/s";
 }
 if ($value == "MHS 1m") {
